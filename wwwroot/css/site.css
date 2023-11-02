@@ -16,7 +16,11 @@ html {
   position: relative;
   min-height: 100%;
 }
-
+header {
+    padding-top: 9.5rem;
+    padding-bottom: 6rem;
+    background-color:green;
+}
 body {
   margin-bottom: 60px;
 }
