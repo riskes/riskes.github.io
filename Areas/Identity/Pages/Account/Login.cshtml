@@ -1,0 +1,73 @@
+﻿@page
+@model LoginModel
+
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/logins/login-6/assets/css/login-6.css">
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+<body class="bg-transparent row align-items-center">
+
+
+    <section class=" p-3 p-md-4 p-xl-5">
+    <div class="container">
+            <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+                <div class="card border-0 shadow-sm rounded-4">
+                    <div class="card-body p-3 p-md-4 p-xl-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-5 text-center">
+                                    <h3>Scouting CEFS Manlleu</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <form id="account" method="post">
+                            <asp:Login DisplayRememberMe="False" />
+                            <div class="row gy-3 overflow-hidden">
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input asp-for="Input.Username" class="form-control" autocomplete="username" aria-required="true" placeholder="user" />
+                                        <label asp-for="Input.Username" class="form-label">Username</label>
+                                        <span asp-validation-for="Input.Username" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                                        <label asp-for="Input.Password" class="form-label">Password</label>
+                                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-warning">Log in</button>
+                                    </div>
+                                </div>
+
+
+                                    <div>
+                                        <p>
+                                            <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                                        </p>
+                                        <p>
+                                            <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                                        </p>
+                                        <p>
+                                            <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                                        </p>
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,12 @@
+html {
+    background-image: url("../img/fondoweblogin.png");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    margin-top: 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+section {
+    margin: 0 auto;
+}
