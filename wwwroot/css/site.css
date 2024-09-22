@@ -50,6 +50,53 @@ body {
     color: yellow;
 }
 
+.Ramis {
+    background-color: darkslategrey;
+    color: white;
+}
+
+
+
+.Pia {
+    background-color: darkgreen;
+    color: lightgreen;
+}
+.Caldes {
+    background-color: royalblue;
+    color: white;
+}
+.Vacarisses {
+    background-color: darkred;
+    color: white;
+}
+.Riude {
+    background-color: darkblue;
+    color: white;
+}
+.SantaPerpetua {
+    background-color: white;
+    color: darkred;
+    border-style: solid;
+    border-color: darkred;
+}
+.Pineda {
+    background-color: white;
+    color: darkred;
+    border-style: solid;
+    border-color: darkred;
+}
+.Racing {
+    background-color: goldenrod;
+    color: black;
+}
+.Mataro {
+    background-color: darkred;
+    color: darkblue;
+}
+.Vacarisses {
+    background-color: darkred;
+    color: white;
+}
 .Vilafant {
     border-style: solid;
     border-color: black;
